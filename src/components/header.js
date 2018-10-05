@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import logo from '../images/gatsby-icon.png'
+import logo from '../images/logo.svg'
 import styled from 'styled-components'
 
 const Wrapper = styled.header`
@@ -14,7 +14,7 @@ const Wrapper = styled.header`
 const Container = styled.div`
   margin: 0 auto;
   max-width: 960px;
-  padding: 1.45rem 1.0875rem;
+  padding: 10px 0;
   position: relative;
   display: flex;
   z-index: 2;
@@ -31,7 +31,7 @@ const LinkWrap = styled.span`
 `
 
 const Img = styled.img`
-  width: 50px;
+  width: 80px;
   height: auto;
 `
 

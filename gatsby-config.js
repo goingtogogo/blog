@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: "Goingtogogo's blog",
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -8,13 +8,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'gatsby-blog',
+        short_name: 'blog',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#ffffff',
+        theme_color: '#ffffff',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/favicon-32x32.png', // This path is relative to the root of the site.
       },
     },
     {
@@ -29,6 +29,13 @@ module.exports = {
       options: {
         name: 'img',
         path: `${__dirname}/src/images/`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'img',
+        path: `${__dirname}/static/assets/`,
       },
     },
     {
