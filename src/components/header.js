@@ -5,38 +5,41 @@ import styled from 'styled-components'
 
 const Wrapper = styled.header`
   position: relative;
-  background: rebeccapurple;
-  margin-bottom: 1.45rem;
-  color: blue;
-  height: 25vh;
+  font-family: georgia, serif;
+  background-color: #fbfef9;
 `
 
 const Container = styled.div`
   margin: 0 auto;
   max-width: 960px;
-  padding: 10px 0;
+  padding: 30px 0;
   position: relative;
   display: flex;
+  align-items: center;
   z-index: 2;
 `
 
 const Nav = styled.nav`
-  margin-left: 30px;
+  margin-left: 40px;
   display: flex;
-  align-items: center;
 `
 
 const LinkWrap = styled.span`
   margin: 0px 10px;
+  a {
+    border-bottom: 2px solid #0e79b2;
+  }
 `
 
 const Img = styled.img`
   width: 80px;
+  margin-top: 30px;
   height: auto;
 `
 
 const style = {
-  color: 'white',
+  color: '#191923',
+  fontSize: '24px',
   textDecoration: 'none',
 }
 
@@ -48,13 +51,13 @@ const Header = () => (
       </Link>
       <Nav>
         <LinkWrap>
-          <Link to="/about" style={style}>
-            about
+          <Link to="/" style={style}>
+            home
           </Link>
         </LinkWrap>
         <LinkWrap>
-          <Link to="/" style={style}>
-            home
+          <Link to="/about" style={style}>
+            about
           </Link>
         </LinkWrap>
       </Nav>

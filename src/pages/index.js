@@ -7,8 +7,6 @@ import { graphql } from 'gatsby'
 const IndexPage = ({ data }) => (
   <Layout>
     <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
     {data.allMarkdownRemark.edges.map(({ node }) => (
       <PostListing key={node.id} post={node} />
     ))}
