@@ -5,14 +5,13 @@ import styled from 'styled-components'
 
 const Wrapper = styled.header`
   position: relative;
-  font-family: georgia, serif;
   background-color: #fbfef9;
 `
 
 const Container = styled.div`
   margin: 0 auto;
   max-width: 960px;
-  padding: 30px 0;
+  padding: 30px 0 10px 0;
   position: relative;
   display: flex;
   align-items: center;
@@ -26,9 +25,6 @@ const Nav = styled.nav`
 
 const LinkWrap = styled.span`
   margin: 0px 10px;
-  a {
-    border-bottom: 2px solid #0e79b2;
-  }
 `
 
 const Img = styled.img`
@@ -52,12 +48,12 @@ const Header = () => (
       <Nav>
         <LinkWrap>
           <Link to="/" style={style}>
-            home
+            главная
           </Link>
         </LinkWrap>
         <LinkWrap>
           <Link to="/about" style={style}>
-            about
+            контакты
           </Link>
         </LinkWrap>
       </Nav>

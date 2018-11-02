@@ -1,28 +1,36 @@
 import React from 'react'
-import Img from 'gatsby-image'
+// import Img from 'gatsby-image'
 import styled from 'styled-components'
 import Layout from '../components/layout'
 
 const Wrapper = styled.div`
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
-  padding: 10px 0;
-  line-height: 2;
   a {
     color: #0e79b2;
     text-decoration: none;
   }
+  @media (min-width: 992px) {
+    width: 960px;
+  }
+`
+
+const Contact = styled.div`
+  margin: 10px 0;
 `
 
 export default function(props) {
   return (
     <Layout>
       <Wrapper>
-        <span>telegram: </span>
-        <a href="https://t.me/goingtogogo">@goingtogogo</a>
-        <br />
-        <span>email: </span>
-        <a href="mailto:adisssabeba@gmail.com">adisssabeba@gmail.com</a>
+        <Contact>
+          <span>telegram: </span>
+          <a href="https://t.me/goingtogogo">@goingtogogo</a>
+        </Contact>
+        <Contact>
+          <span>email: </span>
+          <a href="mailto:adisssabeba@gmail.com">adisssabeba@gmail.com</a>
+        </Contact>
         {/* <Img fluid={props.data.background.childImageSharp.fluid} /> */}
       </Wrapper>
     </Layout>
