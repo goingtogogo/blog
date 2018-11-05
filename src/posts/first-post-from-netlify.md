@@ -1,9 +1,7 @@
 ---
-path: first-post-from-netlify
+path: webpack-links
 date: 2018-10-04T14:25:55.806Z
-title: First post from Netlify
-image: '123'
+title: Web perfomance
 ---
-![](/assets/csoqrx49zjg.jpg)
-
-Hello tratata
+* Расшифровка обзорного доклада Ивана Акулова об оптимизации быстродействия https://3perf.com/talks/web-perf-101/
+* Отдельно про оптимизацию изображений https://iamakulov.com/notes/optimize-images-webpack/
