@@ -1,17 +1,27 @@
 ---
-title: 'My second blog post'
+path: scope-and-closures
+date: 2018-11-17T22:00:17.413Z
+title: Scope and Closures
 ---
+Что делает _движок_, когда встречает на своем пути** var x = 10** ? 
 
-## Hello
+1. _Компилятор_ объявляет переменную **var a** (если она не была объявлена ранее). 
+2. _Движок_ ищет эту переменную в _Области видимости _и если находит, то присваивает ей значение. **a = 2 **
 
-Reason is not a new language; it's a new syntax and toolchain powered by the battle-tested language, OCaml. Reason gives OCaml a familiar syntax geared toward JavaScript programmers, and caters to the existing NPM/Yarn workflow folks already know.
+Область видимости — это набор правил, которые определяют где и как переменные (идентификаторы) могут быть найдены.
 
-In that regard, Reason can almost be considered as a solidly statically typed, faster and simpler cousin of JavaScript, minus the historical crufts, plus the features of ES2030 you can use today, and with access to both the JS and the OCaml ecosystem!<!-- end -->
+В целом, можно сказать, что смысл лексической области видимости заключается в том, что область видимости определяется после компиляции, и когда интерпретатору надо найти объявление переменной или функции, сначала он смотрит в текущей области видимости, но, если найти то, что ему нужно, не удаётся, он переходит в родительскую область видимости, продолжая поиск по тому же принципу. Самый высокий уровень, на который он может перейти, называется глобальной областью видимости.
 
-Reason compiles to JavaScript thanks to our partner project, BuckleScript, which compiles OCaml/Reason into readable JavaScript with smooth interop. Reason also compiles to fast, barebone assembly, thanks to OCaml itself.
+Не важно откуда вызывается функция или даже как она вызывается, ее лексическая область видимости определена только тем, где функция была объявлена.
 
-Reason is not a new language; it's a new syntax and toolchain powered by the battle-tested language, OCaml. Reason gives OCaml a familiar syntax geared toward JavaScript programmers, and caters to the existing NPM/Yarn workflow folks already know.
+## Hoisting
 
-In that regard, Reason can almost be considered as a solidly statically typed, faster and simpler cousin of JavaScript, minus the historical crufts, plus the features of ES2030 you can use today, and with access to both the JS and the OCaml ecosystem!
+![](/assets/carbon.png)
 
-Reason compiles to JavaScript thanks to our partner project, BuckleScript, which compiles OCaml/Reason into readable JavaScript with smooth interop. Reason also compiles to fast, barebone assembly, thanks to OCaml itself.
+![](/assets/carbon-1-.png)
+
+## Замыкание
+
+ — это когда функция умеет запоминать и имеет доступ к лексической области видимости даже тогда, когда эта функция выполняется вне своей лексической области видимости.
+
+![Замыкание во всей красе](/assets/carbon-2-.png)
