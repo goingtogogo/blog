@@ -1,13 +1,18 @@
 import React, { Component } from 'react'
 import { graphql } from 'gatsby'
+import styled from 'styled-components'
 import Layout from '../components/layout'
+
+const Header = styled.h1`
+  padding-bottom: 20px;
+`
 
 export default class Page extends Component {
   render() {
     const { data } = this.props
     return (
       <Layout>
-        <h1> {data.markdownRemark.frontmatter.title}</h1>
+        <Header> {data.markdownRemark.frontmatter.title}</Header>
         <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
       </Layout>
     )

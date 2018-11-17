@@ -14,6 +14,7 @@ const Container = styled.div`
   padding: 0px 1.0875rem 1.45rem;
   padding-top: 0;
   flex: 1;
+  line-height: 1.4;
   h1 {
     font-size: 32px;
     font-style: italic;
