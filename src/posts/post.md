@@ -1,17 +1,26 @@
 ---
-title: 'My first blog post'
+path: functions
+date: 2018-11-19T14:08:12.975Z
+title: Functions
 ---
+Функции - это объект.
 
-## Hello
+```
+function noop() {}console.log(typeof noop) // function - чтоб было удобно отличать объект от функцииconsole.log(noop instanceof Object) // trueconsole.dir(noop)
+```
 
-Reason is not a new language; it's a new syntax and toolchain powered by the battle-tested language, OCaml. Reason gives OCaml a familiar syntax geared toward JavaScript programmers, and caters to the existing NPM/Yarn workflow folks already know.<!-- end -->
+Функции - это объект первого класса.
 
-In that regard, Reason can almost be considered as a solidly statically typed, faster and simpler cousin of JavaScript, minus the historical crufts, plus the features of ES2030 you can use today, and with access to both the JS and the OCaml ecosystem!
+* function() {} - у них есть литерал
+* let handle = function() {} - объект можно поместить в переменную
+* array.push(function() {}) - объект можно передать в массив
+* window.person = function() {} - объект можно указать в качестве свойства другого объекта
+* invite(function() {}) - объект можно передать в функцию
+* return function() {}- объект можно вернуть из функции
+* person.name = 'Handle' - у объекта есть свойства
 
-Reason compiles to JavaScript thanks to our partner project, BuckleScript, which compiles OCaml/Reason into readable JavaScript with smooth interop. Reason also compiles to fast, barebone assembly, thanks to OCaml itself.
+Создание функций
 
-Reason is not a new language; it's a new syntax and toolchain powered by the battle-tested language, OCaml. Reason gives OCaml a familiar syntax geared toward JavaScript programmers, and caters to the existing NPM/Yarn workflow folks already know.
-
-In that regard, Reason can almost be considered as a solidly statically typed, faster and simpler cousin of JavaScript, minus the historical crufts, plus the features of ES2030 you can use today, and with access to both the JS and the OCaml ecosystem!
-
-Reason compiles to JavaScript thanks to our partner project, BuckleScript, which compiles OCaml/Reason into readable JavaScript with smooth interop. Reason also compiles to fast, barebone assembly, thanks to OCaml itself.
+* Объявление функции _// Function Declaration_
+* Выражении функции  _// Function Expression_
+* Вызов конструктора
