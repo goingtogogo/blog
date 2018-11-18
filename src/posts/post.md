@@ -3,12 +3,6 @@ path: functions
 date: 2018-11-19T14:08:12.975Z
 title: Functions
 ---
-Функции - это объект.
-
-```
-function noop() {}console.log(typeof noop) // function - чтоб было удобно отличать объект от функцииconsole.log(noop instanceof Object) // trueconsole.dir(noop)
-```
-
 Функции - это объект первого класса.
 
 * function() {} - у них есть литерал
