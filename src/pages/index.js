@@ -2,11 +2,11 @@ import React from 'react'
 import PostListing from '../components/listing'
 import Layout from '../components/layout'
 
-import { graphql } from 'gatsby'
+import {graphql} from 'gatsby'
 
-const IndexPage = ({ data }) => (
+const IndexPage = ({data}) => (
   <Layout>
-    {data.allMarkdownRemark.edges.map(({ node }) => (
+    {data.allMarkdownRemark.edges.map(({node}) => (
       <PostListing key={node.id} post={node} />
     ))}
   </Layout>

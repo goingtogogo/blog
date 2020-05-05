@@ -1,19 +1,18 @@
-import React, { Component } from 'react'
-import { graphql } from 'gatsby'
-import styled from 'styled-components'
-import Layout from '../components/layout'
+import React, {Component} from 'react'
+import {graphql} from 'gatsby'
 
-const Header = styled.h1`
-  padding-bottom: 20px;
-`
+import styles from '../stylesheets/page.module.css'
+import Layout from '../components/layout'
 
 export default class Page extends Component {
   render() {
-    const { data } = this.props
+    const {data} = this.props
     return (
       <Layout>
-        <Header> {data.markdownRemark.frontmatter.title}</Header>
-        <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+        <h1 className={styles.title}>
+          {data.markdownRemark.frontmatter.title}
+        </h1>
+        <div dangerouslySetInnerHTML={{__html: data.markdownRemark.html}} />
       </Layout>
     )
   }
@@ -21,7 +20,7 @@ export default class Page extends Component {
 
 export const query = graphql`
   query BlogPostQuery($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    markdownRemark(fields: {slug: {eq: $slug}}) {
       excerpt
       html
       frontmatter {
