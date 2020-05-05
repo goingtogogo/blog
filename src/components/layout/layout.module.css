@@ -1,21 +1,13 @@
 .layout {
   margin: 0 auto;
-  max-width: 960px;
-  padding: 0px 1.0875rem 1.45rem;
-  padding-top: 0;
-  flex: 1;
-  line-height: 1.4;
+  max-width: 42rem;
+  padding: 1.5rem;
+  padding-top: 6.5rem;
+  flex: 1 0 auto;
 }
 
-.layout h1 {
-  font-size: 32px;
-  font-style: italic;
-  color: #0e79b2;
-  margin: 7px 0;
-}
-
-.layout h2 {
-  font-size: 28px;
-  margin: 5px 0;
-  font-style: normal;
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
