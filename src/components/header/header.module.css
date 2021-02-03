@@ -1,11 +1,28 @@
 .header {
-  position: fixed;
-  top: 2.5rem;
-  left: 12rem;
+  display: grid;
+  grid-template-columns: repeat(12, 80px);
+  grid-column-gap: 16px;
 }
 
-.backlink {
+.nav {
+  padding: 80px 0;
+  grid-column: 3 / span 8;
+}
+
+.nav::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 338px;
+  height: 294px;
+  background-image: url('../../images/web.png');
+}
+
+.link {
+  padding: 0 8px;
   font-size: 24px;
-  color: #000;
+  font-weight: 400;
+  color: var(--text-color);
   text-decoration: none;
 }

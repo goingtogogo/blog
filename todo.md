@@ -1,0 +1,13 @@
+- залить на digitalocean
+- add eslint
+- cup animation
+- group by year +
+- /about
+- /now
+- table of contents
+- Back button
+- ci
+- fonts +
+- footer
+- tags
+- content

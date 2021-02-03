@@ -1,7 +1,28 @@
 .footer {
+  position: relative;
   flex-shrink: 0;
-  max-width: 42rem;
-  margin: 0 auto;
-  padding: 1rem;
-  color: #78757a;
+  display: grid;
+  grid-template-columns: repeat(12, 80px);
+  grid-column-gap: 16px;
+  height: 160px;
+}
+
+.left {
+  grid-column: 3 / span 2;
+}
+
+.right {
+  grid-column: 9 / span 2;
+}
+
+.link {
+  display: block;
+  padding: 8px;
+  color: var(--text-color);
+}
+
+.label {
+  display: block;
+  font-weight: 400;
+  padding: 8px;
 }

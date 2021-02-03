@@ -1,13 +1,49 @@
+:root {
+  --main-bg-color: #F7EEE6;
+  --text-color: #17292F;
+  --accent-color: #ED5B54;
+  --primary-color: #5B9BAD;
+}
+
 .layout {
-  margin: 0 auto;
-  max-width: 42rem;
-  padding: 1.5rem;
-  padding-top: 6.5rem;
-  flex: 1 0 auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(12, 80px);
+  grid-column-gap: 16px;
+  margin-top: 24px;
+  padding-bottom: 160px;
+}
+
+.layout::before {
+  content: '';
+  position: absolute;
+  top: -88px;
+  left: -32px;
+  width: 292px;
+  height: 292px;
+  background-color: rgba(255, 91, 83, 0.79);
+  background-image: url('../../images/tea.png');
+  background-position: 58% 50%;
+  background-repeat: no-repeat;
+  background-size: 136px 140px;
+  border-radius: 50%;
+  box-shadow: 40px 60px 50px -47px rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+
+.layout::after {
+  content: '';
+  position: absolute;
+  top: 380px;
+  right: -64px;
+  width: 32px;
+  height: 324px;
+  background-image: url('../../images/stars.svg');
 }
 
 .container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin: 0 auto;
 }
