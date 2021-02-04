@@ -1,11 +1,45 @@
 .header {
-  position: fixed;
-  top: 2.5rem;
-  left: 12rem;
+  display: grid;
+  grid-template-columns: repeat(12, 80px);
+  grid-column-gap: 16px;
 }
 
-.backlink {
+.header::after {
+  content: '';
+  position: absolute;
+  top: 124px;
+  left: 120px;
+  width: 292px;
+  height: 292px;
+  background-color: rgba(255, 91, 83, 0.79);
+  background-image: url('../../images/tea.png');
+  background-position: 58% 50%;
+  background-repeat: no-repeat;
+  background-size: 136px 140px;
+  border-radius: 50%;
+  box-shadow: 40px 60px 50px -47px rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+
+.nav {
+  padding: 80px 0;
+  grid-column: 3 / span 8;
+}
+
+.nav::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 338px;
+  height: 294px;
+  background-image: url('../../images/web.png');
+}
+
+.link {
+  padding: 0 8px;
   font-size: 24px;
-  color: #000;
+  font-weight: 400;
+  color: var(--text-color);
   text-decoration: none;
 }

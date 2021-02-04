@@ -24,14 +24,20 @@ const Layout = ({children}) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            {name: 'description', content: 'Gatsby blog'},
-            {name: 'keywords', content: 'gatsbyjs, goingtogogo'},
+            {
+              name: 'description',
+              content: 'Personal blog about some technical stuff',
+            },
+            {
+              name: 'keywords',
+              content: 'gngtgg.space, frontend, javascript, фронтенд',
+            },
           ]}
         >
-          <html lang="en" />
+          <html lang="ru" />
         </Helmet>
         <Header />
-        <div className={styles.layout}>{children}</div>
+        <main className={styles.layout}>{children}</main>
         <Footer />
       </div>
     )}

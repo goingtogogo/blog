@@ -1,19 +1,22 @@
 module.exports = {
   siteMetadata: {
-    title: "Goingtogogo's blog",
+    title: 'Leyla Mamedova | Blog',
+    // siteUrl
+    description: "Leyla Mamedova's personal blog about some technical stuff",
+    keywords: 'Leyla.codes, personal blog, gngtgg.space, frontend, javascript',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-blog',
-        short_name: 'blog',
+        name: 'Leyla Mamedova | Blog',
+        short_name: 'Blog',
         start_url: '/',
-        background_color: '#ffffff',
-        theme_color: '#ffffff',
+        background_color: '#F7EEE6',
+        theme_color: '#F7EEE6',
         display: 'minimal-ui',
-        icon: 'src/images/favicon-32x32.png', // This path is relative to the root of the site.
+        icon: 'static/assets/favicon-32x32.png',
       },
     },
     {

@@ -4,13 +4,13 @@ import styles from './header.module.css'
 
 const Header = () => (
   <header className={styles.header}>
-    <nav>
+    <nav className={styles.nav}>
       <Link
         to="/"
-        className={styles.backlink}
-        activeStyle={{visibility: 'hidden'}}
+        className={styles.link}
+        // activeStyle={{visibility: 'hidden'}}
       >
-        ←
+        Главная
       </Link>
     </nav>
   </header>

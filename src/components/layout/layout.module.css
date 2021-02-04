@@ -1,13 +1,35 @@
+:root {
+  --main-bg-color: #F7EEE6;
+  --text-color: #17292F;
+  --accent-color: #ED5B54;
+  --primary-color: #5B9BAD;
+}
+
 .layout {
-  margin: 0 auto;
-  max-width: 42rem;
-  padding: 1.5rem;
-  padding-top: 6.5rem;
-  flex: 1 0 auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(12, 80px);
+  grid-column-gap: 16px;
+  min-height: calc(100vh - 380px);
+  margin-top: 24px;
+  padding-bottom: 160px;
+  overflow: hidden;
+}
+
+.layout::after {
+  content: '';
+  position: absolute;
+  top: 380px;
+  right: -64px;
+  width: 32px;
+  height: 324px;
+  background-image: url('../../images/stars.svg');
+  overflow: hidden;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin: 0 auto;
 }
