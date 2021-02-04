@@ -6,9 +6,11 @@ import {graphql} from 'gatsby'
 
 const IndexPage = ({data}) => (
   <Layout>
-    {data.allMarkdownRemark.group.map(({edges, fieldValue}) => (
-      <PostListing key={fieldValue} edges={edges} year={fieldValue} />
-    ))}
+    {data.allMarkdownRemark.group
+      .sort((year1, year2) => year2.fieldValue - year1.fieldValue)
+      .map(({edges, fieldValue}) => (
+        <PostListing key={fieldValue} edges={edges} year={fieldValue} />
+      ))}
   </Layout>
 )
 
@@ -24,6 +26,7 @@ export const query = graphql`
             id
             frontmatter {
               title
+              date
             }
             fields {
               slug

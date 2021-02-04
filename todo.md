@@ -1,13 +1,12 @@
 - залить на digitalocean
 - add eslint
 - cup animation
-- group by year +
+- hovers
 - /about
 - /now
 - table of contents
 - Back button
 - ci
-- fonts +
-- footer
 - tags
-- content
+- настроить cms
+- meta https://www.johndpotts.com/2018-10-23-meta-tags-for-social-sharing-gatsby-blog/

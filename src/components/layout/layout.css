@@ -55,11 +55,22 @@ body > div > div {
 }
 
 body {
+  position: relative;
   background-color: var(--main-bg-color);
   margin: 0;
   color: var(--text-color);
   font-size: 18px;
   font-weight: 300;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 51px;
+  background-image: url('../../images/pattern.svg');
 }
 
 article,

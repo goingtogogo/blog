@@ -1,5 +1,4 @@
 .footer {
-  position: relative;
   flex-shrink: 0;
   display: grid;
   grid-template-columns: repeat(12, 80px);
