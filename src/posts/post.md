@@ -16,6 +16,3 @@ title: Functions
 
 Создание функций
 
-- Объявление функции _// Function Declaration_
-- Выражении функции _// Function Expression_
-- Вызов конструктора
